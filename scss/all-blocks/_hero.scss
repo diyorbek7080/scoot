@@ -1,1 +1,45 @@
-//hero
+.hero {
+
+    &__container {
+        width: 100%;
+        max-width: 1480px;
+        background-image: url(../../images/hero-scoot.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+
+
+    &__scooter {
+        margin: 0;
+        padding: 153px 775px 385px 165px;
+    }
+
+    &__heading {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 500px;
+        font-family: 'Space Mono';
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+
+    }
+
+    &__desc {
+        width: 100%;
+        max-width: 405px;
+        margin: 0;
+        padding: 0;
+        margin-left: 100px;
+        font-family: 'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+}

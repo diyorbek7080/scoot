@@ -1,3 +1,26 @@
 .button {
-  padding: 0;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 14px 29px;
+  max-width: 180px;
+  background: orange;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-left: 100px;
+}
+
+
+
+@media only screen and ( max-width:768px){
+  .button {
+  max-width: 160px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
 }

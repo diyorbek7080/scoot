@@ -341,6 +341,30 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Space Mono';
+  src: url("../fonts/SpaceMono-Bold.woff2") format("woff2"), url("../fonts/SpaceMono-Bold.woff") format("woff"), url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url("../fonts/SpaceMono-Regular.woff2") format("woff2"), url("../fonts/SpaceMono-Regular.woff") format("woff"), url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -364,7 +388,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -388,12 +412,174 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .button {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 14px 29px;
+  max-width: 180px;
+  background: orange;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    max-width: 160px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+.header__container {
+  max-width: 1146px;
+  width: 100%;
+  padding: 22px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  width: 100%;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 107px;
+  height: 29px;
+  margin-right: 58px;
+}
+
+.header__navbar {
+  width: 100%;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list {
+  margin: 0;
   padding: 0;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.header__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__logo {
+    width: 107px;
+    height: 29px;
+    margin-right: 40px;
+  }
+  .header__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header__navbar {
+    max-width: 500px;
+  }
+  .header__link {
+    padding: 0;
+    margin-left: 50px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .header__logo {
+    width: 107px;
+    height: 29px;
+    margin-right: 40px;
+  }
+  .header__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header__navbar {
+    max-width: 500px;
+  }
+  .header__link {
+    padding: 0;
+    margin-left: 50px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+}
+
+.hero__container {
+  width: 100%;
+  max-width: 1480px;
+  background-image: url(../../images/hero-scoot.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero__scooter {
+  margin: 0;
+  padding: 153px 775px 385px 165px;
+}
+
+.hero__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 500px;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+.hero__desc {
+  width: 100%;
+  max-width: 405px;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */
